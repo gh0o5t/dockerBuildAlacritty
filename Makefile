@@ -35,7 +35,4 @@ check:
 
 install: build copy
 	cp -f ./alacritty $(USER)/.local/bin/alacritty
-	tic -xe ./alacritty ./alacritty.info
-	mkdir -p /usr/local/share/man/man1
-	gzip -c alacritty.man | sudo tee /usr/local/share/man/man1/alacritty.1.gz > /dev/null
 
