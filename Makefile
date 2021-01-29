@@ -37,4 +37,4 @@ install: build copy
 	cp -f ./alacritty /usr/local/bin/alacritty
 	mkdir -p /usr/local/share/man/man1
 	gzip -c alacritty.man | tee /usr/local/share/man/man1/alacritty.1.gz > /dev/null
-	tic -xe ./alacritty ./alacritty.info
+	tic -xe alacritty,alacritty-direct ./alacritty.info
